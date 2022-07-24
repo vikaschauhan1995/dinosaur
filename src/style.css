@@ -1,0 +1,51 @@
+.dino {
+  position: absolute;
+  bottom: 0px;
+  background-image: url(./image/dino.png);
+}
+
+.obstacle {
+  position: absolute;
+  background-image: url(./image/cactus.png);
+  bottom: 0px;
+}
+
+#desert {
+  position: absolute;
+  bottom: 0px;
+  background-image: url(./image/background.png);
+  background-repeat: repeat-x;
+  animation: slideright 1600s infinite linear;
+  -webkit-animation: slideright 1600s infinite linear;
+  width: 100%;
+  height: 200px;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+
+  to {
+    background-position: 0%;
+  }
+}
+
+@-webkit-keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+
+  to {
+    background-position: 0%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  height: 400px;
+  margin-top: 200px
+}
